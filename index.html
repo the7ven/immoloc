@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>ImoLoc</title>
+</head>
+<body>
+      <header>
+        <div class="container">
+            <nav class="navbar">
+                <div class="logo">Immo<span>Loc</span></div>
+                <ul class="nav-links">
+                    <li><a href="#hero">Accueil</a></li>
+                    <li><a href="#about">À Propos</a></li>
+                    <li><a href="#catalogue">Appartements</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+        </div>
+
+       
+    </header>
+
+
+  <div class="slider-container">
+        <div class="slider">
+            <!-- Slide 1 -->
+            <div class="slide active">
+                <img src="images/med-badr-chemmaoui-xtDpXi_a-YQ-unsplash.jpg" alt="Appartement à Cocody">
+                <div class="slide-content">
+                    <h2>Luxueux Appartement à Cocody</h2>
+                    <p>3 chambres | 2 salles de bain | 120m²</p>
+                    <div class="price">250 000 FCFA/mois</div>
+                </div>
+            </div>
+            
+            <!-- Slide 2 -->
+            <div class="slide">
+                <img src="images/andrea-davis-VOWXF7lsAN0-unsplash.jpg" alt="Studio à Marcory">
+                <div class="slide-content">
+                    <h2>Studio Moderne à Marcory</h2>
+                    <p>1 chambre | 1 salle de bain | 45m²</p>
+                    <div class="price">150 000 FCFA/mois</div>
+                </div>
+            </div>
+            
+            <!-- Slide 3 -->
+            <div class="slide">
+                <img src="images/gabriel-beaudry-WuQME0I_oZA-unsplash.jpg" alt="Penthouse à Plateau">
+                <div class="slide-content">
+                    <h2>Penthouse avec Vue sur le Plateau</h2>
+                    <p>4 chambres | 3 salles de bain | 200m²</p>
+                    <div class="price">450 000 FCFA/mois</div>
+                </div>
+            </div>
+            
+            <!-- Slide 4 -->
+            <div class="slide">
+                <img src="images/veronique-trudel-KsXifvHh5Vo-unsplash.jpg" alt="Appartement à Riviera">
+                <div class="slide-content">
+                    <h2>Appartement Familial à Riviera</h2>
+                    <p>3 chambres | 2 salles de bain | 110m²</p>
+                    <div class="price">300 000 FCFA/mois</div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Navigation buttons -->
+        <button class="nav-button prev">&lt;</button>
+        <button class="nav-button next">&gt;</button>
+        
+        <!-- Indicators -->
+        <div class="indicators">
+            <div class="indicator active"></div>
+            <div class="indicator"></div>
+            <div class="indicator"></div>
+            <div class="indicator"></div>
+        </div>
+    </div>
+
+
+
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">À Propos de Nous</h2>
+            <div class="about-content">
+                <div class="about-image">
+                    <img src="images/about.jpg" alt="Notre équipe">
+                </div>
+                <div class="about-text">
+                    <h3>Votre partenaire de confiance pour la location d'appartements</h3>
+                    <p>Depuis plus de 15 ans, ImmoLoc s'est imposé comme le leader de la location d'appartements dans la région. Notre engagement envers l'excellence et la satisfaction client nous a permis de bâtir une réputation solide dans le secteur immobilier.</p>
+                    <p>Ce qui nous distingue, c'est notre approche personnalisée. Nous comprenons que chaque client a des besoins uniques, et nous nous efforçons de trouver l'appartement parfait qui répond à ces besoins spécifiques.</p>
+                    <p>Notre équipe de professionnels expérimentés est là pour vous guider à chaque étape du processus de location, de la recherche initiale jusqu'à la signature du bail.</p>
+                    <a href="#catalogue" class="btn">Voir nos appartements</a>
+                </div>
+            </div>
+        </div>
+    </section>
+ 
+ <div class="container">
+        <h1 class="section-title">Nos Appartements</h1>
+        
+        <div class="catalogue" id="appartements-catalogue">
+            <!-- Les cartes d'appartements seront générées par JavaScript -->
+        </div>
+    </div>
+    
+    <div class="modal" id="appart-modal">
+        <div class="modal-content">
+            <div class="close-modal">&times;</div>
+            <div class="slideshow" id="modal-slideshow">
+                <!-- Les images du slideshow seront générées par JavaScript -->
+                <div class="slide-arrow slide-prev">&#10094;</div>
+                <div class="slide-arrow slide-next">&#10095;</div>
+                <div class="slide-nav" id="slide-nav"></div>
+            </div>
+            <div class="modal-info" id="modal-info">
+                <!-- Les informations de l'appartement seront générées par JavaScript -->
+            </div>
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
